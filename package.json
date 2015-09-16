@@ -16,6 +16,7 @@
   "author": "Heaven",
   "license": "ISC",
   "dependencies": {
+    "commander": "^2.8.1",
     "shelljs": "^0.5.3",
     "yargs": "^3.25.0"
   }
