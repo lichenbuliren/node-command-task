@@ -1,0 +1,22 @@
+{
+  "name": "node-command-task",
+  "version": "1.0.0",
+  "description": "node command task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "command"
+  ],
+  "bin": {
+    "hello": "hello"
+  },
+  "author": "Heaven",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.5.3",
+    "yargs": "^3.25.0"
+  }
+}
