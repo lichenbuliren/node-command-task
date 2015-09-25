@@ -51,6 +51,8 @@ program.version('0.0.1')
     .option('-P, --pineapple', 'Add pineapple')
     .option('-b, --bbq-sauce', 'Add bbq sauce')
     .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
+    .option('-s --size <size>', 'Pizza size', /^(large|mediun|small})$/i, 'medium')
+    .option('-d --drink [drink]', 'Drink', /^(coke|pepsi|izze)$/i)
     .parse(process.argv);
 
 console.log('you ordered a pizza with:');
@@ -58,3 +60,6 @@ if (program.peppers) console.log('  - peppers');
 if (program.pineapple) console.log('  - pineapple');
 if (program.bbqSauce) console.log('  - bbq');
 console.log('  - %s cheese', program.cheese);
+
+console.log(' size: %j', program.size);
+console.log(' drink: %j', program.drink);
